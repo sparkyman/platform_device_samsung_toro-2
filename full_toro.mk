@@ -29,7 +29,26 @@ PRODUCT_PACKAGES := \
 PRODUCT_COPY_FILES += \
     device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
     device/sample/etc/apns-conf_verizon.xml:system/etc/apns-conf.xml \
-    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+    vendor/samsung/toro/proprietary/libmotricity.so:system/lib/libmotricity.so \
+    vendor/samsung/toro/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
+    vendor/samsung/toro/proprietary/smc_normal_world_android_cfg.ini:system/vendor/etc/smc_normal_world_android_cfg.ini \
+    vendor/samsung/toro/proprietary/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
+    vendor/samsung/toro/proprietary/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
+    vendor/samsung/toro/proprietary/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
+    vendor/samsung/toro/proprietary/fw_bcmdhd_p2p.bin:system/vendor/firmware/fw_bcmdhd_p2p.bin \
+    vendor/samsung/toro/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+    vendor/samsung/toro/proprietary/mms144_ts_rev31.fw:system/vendor/firmware/mms144_ts_rev31.fw \
+    vendor/samsung/toro/proprietary/mms144_ts_rev32.fw:system/vendor/firmware/mms144_ts_rev32.fw \
+    vendor/samsung/toro/proprietary/smc_pa_wvdrm.ift:system/vendor/firmware/smc_pa_wvdrm.ift \
+    vendor/samsung/toro/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/samsung/toro/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/samsung/toro/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/toro/proprietary/libdrmwvmplugin.so:/system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
+    vendor/samsung/toro/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
+    vendor/samsung/toro/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
+    vendor/samsung/toro/proprietary/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
